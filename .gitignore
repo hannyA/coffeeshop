@@ -1,2 +1,3 @@
 .DS_Store
-imgs2/
+imgs2
+node_modules

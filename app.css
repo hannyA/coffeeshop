@@ -1,14 +1,38 @@
 body {
-  background: #c3a655;
+  background: #f0ece2;
   font-family: "Nunito", sans-serif;
+}
+
+.blurb h2 {
+  color: #70560d;
+  font-size: 2.5rem;
+  font-weight: 100;
+}
+
+.blurb p {
+  color: #a28f70;
+  font-size: 1.5rem;
+  font-weight: 100;
+  line-height: 2;
+  /* color: #f8edcd; */
+}
+
+.body-section {
+  margin-top: 100px;
 }
 
 #mainNavbar .navbar-brand {
   color: #70560d;
 }
+
+#mainNavbar .nav-link {
+  color: #c7b198;
+}
+
 #mainNavbar .nav-link:hover {
   color: #70560d;
 }
+
 #mainNavbar {
   font-size: 1.5rem;
   font-weight: 100;
@@ -22,6 +46,17 @@ body {
   font-size: 4rem;
 }
 
+.navbar.scrolled {
+  background: rgb(222, 192, 222);
+}
+
+.icon {
+  /* width: 32px;
+  height: 32px; */
+  font-size: 1rem;
+  color: #70560d; /*#ff4c68; */
+}
+
 @media (max-width: 900px) {
   #headingGroup h1 {
     font-weight: 100;
@@ -29,9 +64,62 @@ body {
   }
 }
 
-/* @media (max-width: 1250px) {
-  #headingGroup h1 {
-    font-weight: 100;
-    font-size: 2.5rem;
+@media (min-width: 768px) {
+  .img-container {
+    position: relative;
+    width: 50%;
   }
-} */
+
+  .img-container::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
+  .img-cover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 992px) {
+  #heading-section .img-container {
+    position: relative;
+    width: 100%;
+  }
+
+  #heading-section .img-container::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
+  #heading-section .img-cover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  .img-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .img-container::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
+  .img-cover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+  }
+}
