@@ -21,21 +21,35 @@ body {
   margin-top: 100px;
 }
 
+#mainNavbar {
+  font-size: 1.5rem;
+  font-weight: 100;
+  transition: background 200ms;
+}
 #mainNavbar .navbar-brand {
   color: #70560d;
 }
 
 #mainNavbar .nav-link {
-  color: #c7b198;
+  color: #a28f70;
 }
 
 #mainNavbar .nav-link:hover {
   color: #70560d;
 }
 
-#mainNavbar {
-  font-size: 1.5rem;
-  font-weight: 100;
+.navbar.scrolled {
+  /* color: white; */
+  background: #d3bd9af0;
+  transition: background 200ms;
+}
+
+#mainNavbar.scrolled .nav-link {
+  color: #fff;
+}
+
+#mainNavbar.scrolled .nav-link:hover {
+  color: #70560d;
 }
 
 #headingGroup span {
@@ -44,10 +58,6 @@ body {
 #headingGroup h1 {
   font-weight: 100;
   font-size: 4rem;
-}
-
-.navbar.scrolled {
-  background: rgb(222, 192, 222);
 }
 
 .icon {
